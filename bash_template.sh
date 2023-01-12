@@ -190,7 +190,7 @@ log Warn "function fn_QueryFileIsExist test finish..."
 
 echo ""
 log Warn "function fn_GetFilexxx test begin..."
-filePath="$(pwd)/$0"
+filePath="$(pwd)/$(fn_GetFileName $0)"
 log Debug "file [${filePath}]"
 log Debug "GetFileName: $(fn_GetFileName ${filePath})"
 log Debug "GetFileNameWithoutSuffix: $(fn_GetFileNameWithoutSuffix ${filePath})"
